@@ -25,10 +25,10 @@ function Herosection({ mood }) {
                 <div data-scroll-container ref={containerRef}>
                     <div className="heromain" style={mood ? { backgroundColor: '#18181b' } : { background: 'linear-gradient(to right,#5899E2, #FFFF)' }}>
                         <div className="one">
-                            <div className="namesec"  style={mood ? { backgroundColor: '#18181b' } : { background: 'linear-gradient(to right,#5899E2, #FFFF)', color: 'black' }}>
-                                <h2 className="txt1">Where Parking</h2>
-                                <h2 className="txt1">Meets Perfection.</h2>
-                                <h3 className="txt2" style={mood ? { fontWeight: '100' } : { fontWeight: '300' }} > The solution for{" "}<strong style={{ color: '#ffea73' }}>MGM's</strong> hassle-free parking management.</h3>
+                            <div className="namesec"  style={mood ? { backgroundColor: '#18181b' } : { background: 'linear-gradient(to right,#5899E2, #FFFF)' }}>
+                                <h2 className="txt1" style={mood ? { color:'white' } : { color:'black' }}>Where Parking</h2>
+                                <h2 className="txt1" style={mood ? { color:'white' } : { color:'black' }}>Meets Perfection.</h2>
+                                <h3 className="txt2" style={mood ? { fontWeight: '100',color:'white' } : { fontWeight: '300' ,color:'black'}} > The solution for{" "}<strong style={{ color: '#ffea73' }}>MGM's</strong> hassle-free parking management.</h3>
                             </div>
 
                             <div className="imgsec" style={mood ? { backgroundColor: '#18181b' } : { backgroundColor: '#FFFF' }}>
@@ -72,7 +72,7 @@ function Herosection({ mood }) {
                             className="mainbutton"
                             style={mood ? { backgroundColor: '#18181b' } : { backgroundColor: '#FFFF' }}
                         >
-                            <button className="mainBtn">Add vehicle</button>
+                            <Link to="/Efficiency" className="mainBtn" >Parking Efficiency</Link>
                             <Link to="/Dashboard" className="mainBtn" id="midBtn">My Dashboard</Link>
                             <Link to='/PricePlan' className="mainBtn">Price Plans</Link>
                         </div>
@@ -83,8 +83,13 @@ function Herosection({ mood }) {
 
 
                         {/* total van */}
-                        <div className="two" style={mood ? { backgroundColor: '#18181b' } : { backgroundColor: '#FFFF' }}>
-                            
+                        <div className="two" style={mood ? { backgroundColor: '#18181b' } : { backgroundColor: '#FFFF',color:'black' }}>
+
+                            <div className="twoSecOne">
+                                <div className="allNames" data-scroll data-scroll-direction="horizontal" data-scroll-speed="9"><strong style={{fontSize:'60px'}}>1100 +</strong> <br /> Active Users</div>
+                                <div className="allNames"><strong style={{fontSize:'60px'}}>150 +</strong><br /> Viechels daily Parked</div>
+                                <div className="allNames" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-9"><strong style={{fontSize:'60px'}}>200 +</strong><br />Viechels Capacity</div>
+                            </div>
                         </div>
 
 

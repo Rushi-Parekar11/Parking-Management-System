@@ -46,7 +46,7 @@ function Dashboard({ mood }) {
 
 
                   <div class="mb-1" >
-                    <input class="form-control" type="file" id="formFile" />
+                    <input class="form-control" type="file" id="formFile"  />
                   </div>
 
 
@@ -55,7 +55,7 @@ function Dashboard({ mood }) {
                   </div>
 
                   <div>
-                    <button type="submit" class="btn btn-primary">Pay {plane.slice(8, 16)}</button>
+                    <button type="submit"  class="btn btn-primary">Pay {plane.slice(8, 16)}</button>
                   </div>
                 </div>        
                 </form>
